@@ -7,17 +7,17 @@ function highlight() {
     let loc = window.location.pathname;
     console.log("Page ID is: " + loc);
     switch (loc) {
-        case "/index.html":
+        case "/":
             console.log("LOCATED")
             var currentElement = document.getElementById("home");
             break;
 
-        case "/quiz.html":
+        case "/quiz":
             console.log("LOCATED")
             var currentElement = document.getElementById("quiz");
             break;
         
-        case "/info.html":
+        case "/info":
             console.log("LOCATED")
             var currentElement = document.getElementById("info");
             break;
