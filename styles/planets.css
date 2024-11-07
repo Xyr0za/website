@@ -1,0 +1,102 @@
+/*      */
+
+body {
+	background-color: #30343F;
+	font-size:medium;
+	color:#FAFAFF;
+	min-block-size: 100%;
+	min-inline-size: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	display: grid;
+	place-content: center;
+	font-family: system-ui, sans-serif;
+}
+
+
+#cont {
+	align-items: center;
+	text-align: center;
+	width: 500px; white-space: normal;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#navbar li {
+	float: left;
+	display: inline;
+}
+
+#navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	position: relative;
+}
+
+
+#navbar li a:hover { 
+	background-color: cornflowerblue;
+	border-radius: 25px;
+	text-shadow: 1px 0 #FAFAFF;
+}
+
+#logo {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50px;
+	border-radius: 25px;
+	border-color: #0c1116;
+}
+
+
+/*     */
+
+
+#planetList {
+	position: fixed;
+	top: 30%;
+	left: 5%;
+	width: 100%;
+}
+
+#planetList ul {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+ 	width: 100px;
+}
+
+#planetList ul li {
+	text-align: center;
+	background-color: #0c1116;
+	border-radius: 25px;
+	margin-bottom: 5%;
+}
+
+#planetList ul li:hover {
+	text-shadow: 1px 0 #FAFAFF;
+}
+
+#planetList ul li:target {
+	text-align: center;
+	background-color: #7494EA;
+	border-radius: 25px;
+	margin-bottom: 5%;
+}
