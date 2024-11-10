@@ -360,7 +360,7 @@ function setQuestion (hash) {
     };
     
     let QH = parseInt(hash.slice(1)) + 1;
-    const Qnum = document.getElementById("questionNum").innerHTML = "QUESTION: " + QH;
+    const Qnum = document.getElementById("questionNum").innerHTML = "QUESTION: " + QH + "/" + questions.length;
 
     const quest = document.getElementById("Question");
     quest.innerHTML = questions[currentQuestion].question;
