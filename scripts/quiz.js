@@ -211,7 +211,7 @@ const questions = [
         correct: 2
     },
     {
-      name: "Galaxy",
+      name: "Neptune",
       question: "Which of the following statements about the Milky Way galaxy is correct?",
       answers: [
         "The Milky Way is a spiral galaxy with two major arms.",
