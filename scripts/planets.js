@@ -118,7 +118,7 @@ function colourElements () {
         setTimeout(() => {
             displayImage.style.opacity = 1;
         }, 50);
-    }, 500);
+    }, 750);
 }
 
 
