@@ -109,9 +109,7 @@ function setPallete (id) {
                  "#d1a8d6", 
                  "#f4c0d3"]
 }
-
-        
-    ];
+];
 
     var curPalette = [];
 
@@ -211,7 +209,7 @@ const questions = [
         correct: 2
     },
     {
-      name: "Neptune",
+      planet: "Galaxy",
       question: "Which of the following statements about the Milky Way galaxy is correct?",
       answers: [
         "The Milky Way is a spiral galaxy with two major arms.",
