@@ -31,11 +31,57 @@ function colourFromPlanet (str) {
             colour = "#5b5ddf"
             break;
         case "Pluto":
-            colour = "#F7F9F9";
+            colour = "#92a8a4";
             break;
     }
     return colour;
 }
+
+//
+
+const text = [
+    {
+        name: "SELECT",
+        text: "Curious about our Solar System? Select a planet to explore its unique characteristics, atmosphere, and place in the cosmos. Each world offers a glimpse into space—from Mars's red deserts to Saturn's rings.",
+    },
+    {
+        name: "Mercury",
+        text: "The closest planet to the Sun, Mercury has extreme temperatures and a rocky, cratered surface similar to our Moon."
+    },
+    {
+        name: "Venus",
+        text: "Venus, shrouded in thick clouds of sulfuric acid, is the hottest planet due to its intense greenhouse effect."
+    },
+    {
+        name: "Earth",
+        text: "The only planet known to support life, Earth has abundant liquid water, a breathable atmosphere, and diverse ecosystems."
+    },
+    {
+        name: "Mars",
+        text: "Known as the Red Planet, Mars has iron-rich soil, large volcanoes, and signs of ancient water flows in river valleys."
+    },
+    {
+        name: "Jupiter",
+        text: "Jupiter, the largest planet, is a gas giant with powerful storms, including the massive Great Red Spot."
+    },
+    {
+        name: "Saturn",
+        text: "Famous for its beautiful rings, Saturn is a gas giant with many moons, including icy Titan and Enceladus."
+    },
+    {
+        name: "Uranus",
+        text: "Uranus rotates on its side and has a blue-green color due to methane in its atmosphere. It’s also ringed."
+    },
+    {
+        name: "Neptune",
+        text: "Neptune, known for its intense blue color and violent storms, has the fastest winds in the Solar System."
+    },
+    {
+        name: "Pluto",
+        text: "Once the ninth planet, Pluto is now a dwarf planet, featuring icy landscapes and an unusual orbit beyond Neptune."
+    }
+]
+
 
 //
 
@@ -49,15 +95,20 @@ function colourElements () {
         planet = "#Select";
     }
     else {
-        
+
     }
 
     var currentElement = document.getElementById("vl");
     currentElement.style.borderLeftColor = pc;
 
-    var title= document.getElementById("titleTxt");
-    title.innerHTML = planet.slice(1).toUpperCase();
+    var title = document.getElementById("titleTxt");
     title.style.color = pc;
+    title.innerHTML = planet.slice(1).toUpperCase()
+
+    var txtCol = document.querySelector(':root');
+    txtCol.style.setProperty("--planetCol", pc)
+
+    changeTxt(window.location.hash.slice(1))
 
     var displayImage = document.getElementById("IMG");
     displayImage.style.opacity = 0;
@@ -69,3 +120,20 @@ function colourElements () {
         }, 50);
     }, 500);
 }
+
+
+function changeTxt (hash) {
+    for (const i of text) {
+        console.log(i.name);
+        console.log(hash)
+        if (i.name==hash) {
+            currentText = i.text;
+            console.log(currentText);
+            break;
+        }
+        else {
+            currentText =text[0].text;
+        };
+    };
+    document.getElementById("facts").innerHTML = currentText;
+};
