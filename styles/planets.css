@@ -1,4 +1,7 @@
 /*      */
+:root {
+	--planetCol: cornflowerblue;
+}
 
 body {
 	background-color: #30343F;
@@ -13,6 +16,7 @@ body {
 	place-content: left;
 }
 
+/* */
 
 #titleTxt {
 	top: 10%;
@@ -114,7 +118,7 @@ body {
 
 
 #planetList ul li:target { 
-	background-color: #7494EA;
+	background-color: var(--planetCol);
 	border-radius: 25px;
 }
 
@@ -138,17 +142,86 @@ body {
   }
 
 #IMG {
-	position: fixed;
-	left: 20%;
+	position: relative;
+	top: 50%;
 	opacity: 100%;
 	width:  1000px;
 	height: 1000px;
 	object-fit: contain;
 	transition: opacity 0.5s ease;
 	opacity: 0;
+	z-index: -3;
+	translate: 13%;
 }
 
 #infoContainer {
-	overflow:hidden;
-	background: #7494EA;
+	position: static;
+	left: 75%;
+}
+
+/* #facts {
+	position: fixed;
+	top: 15%;
+	right: 5%;
+	width: 20rem; 
+	white-space: normal;
+	background-color: #7494EA;
+	border-radius: 50px;
+	padding: 2rem;
+	font-size: large;
+	border-color: aqua;
+ } */
+
+#facts {
+	top: 20%;
+	right: 5%;
+}
+
+/* */
+
+.card {
+	margin: 0 auto;
+	padding: 1em;
+	position: relative;
+	background: #343d46;
+	text-align: center;
+	border-radius: 10px;
+	width: 15em;
+	height: 10em;
+}
+
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+.card::after , .card::before{
+--angle: 0rad;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-image: conic-gradient(from var(--angle), transparent 70%, var(--planetCol));
+top: 50%;
+left: 50%;
+translate: -50% -50%;
+z-index: -1;
+padding: 3px;
+border-radius: 10px;
+animation: 3s spin linear infinite;
+}
+
+.card::before {
+filter: blur(1.5rem);
+opacity: 0.5;
+}
+
+@keyframes spin {
+	from {
+		--angle: 0deg;
+	}
+	to {
+		--angle:  360deg;
+	}
 }
