@@ -100,7 +100,16 @@ function setPallete (id) {
                 "#8C8C8E", 
                 "#D4D4D4"
             ]
-        }
+        },
+        {
+          name: "Galaxy",
+          cols: ["#3f2a45", 
+                 "#7a4a7f", 
+                 "#9f8ab5", 
+                 "#d1a8d6", 
+                 "#f4c0d3"]
+}
+
         
     ];
 
@@ -202,15 +211,15 @@ const questions = [
         correct: 2
     },
     {
-        planet: "Neptune",
-        question: "What causes Neptune's blue coloration?",
-        answers: [
-            "High methane content in the atmosphere",
-            "Presence of liquid water",
-            "Iron oxide on its surface",
-            "Sulfur in its atmosphere"
-        ],
-        correct: 0
+      "name": "Galaxy",
+      "question": "Which of the following statements about the Milky Way galaxy is correct?",
+      "answers": [
+        "The Milky Way is a spiral galaxy with two major arms.",
+        "The Milky Way is an elliptical galaxy.",
+        "The Milky Way is the largest galaxy in the universe.",
+        "The Milky Way is a barred spiral galaxy."
+      ],
+      "correct": 3
     },
     {
         planet: "Pluto",
