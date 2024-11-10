@@ -211,15 +211,15 @@ const questions = [
         correct: 2
     },
     {
-      "name": "Galaxy",
-      "question": "Which of the following statements about the Milky Way galaxy is correct?",
-      "answers": [
+      name: "Galaxy",
+      question: "Which of the following statements about the Milky Way galaxy is correct?",
+      answers: [
         "The Milky Way is a spiral galaxy with two major arms.",
         "The Milky Way is an elliptical galaxy.",
         "The Milky Way is the largest galaxy in the universe.",
         "The Milky Way is a barred spiral galaxy."
       ],
-      "correct": 3
+      correct: 3
     },
     {
         planet: "Pluto",
