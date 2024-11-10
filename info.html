@@ -4,16 +4,16 @@
 <link rel="stylesheet" href="styles/index.css">
 <link rel="stylesheet" href="styles/planets.css">
 
-<script src="scripts/planets.js"></script>
-<script src="scripts/navbar.js"></script>
+<script src="scripts/planets.js" defer></script>
+<script src="scripts/navbar.js" defer></script>
 
-<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="/favicon_io/site.webmanifest">
-<link rel="mask-icon" href="/favicon_io/apple-touch-icon.png" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/x-icon"              href="favicon_io/favicon.ico">
+<link rel="apple-touch-icon"      sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"   href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"   href="/favicon_io/favicon-16x16.png">
+<link rel="manifest"                              href="/favicon_io/site.webmanifest">
+<link rel="mask-icon"                             href="/favicon_io/apple-touch-icon.png" color="#5bbad5">
+<meta name="theme-color"                                                                  content="#ffffff">
 
 <title>Planets </title>
 </head>
@@ -26,9 +26,9 @@
 
 <div id="navbar">
     <ul>
-        <li id="home"><a href="index.html">  HOME              </a></li>
-        <li id="quiz"><a href="quiz.html" >  QUIZ              </a></li>
-        <li id="info"><a href=""          >  THE SOLAR SYSTEM  </a></li>
+        <li id="home"> <a href="index.html">  HOME              </a> </li>
+        <li id="quiz"> <a href="quiz.html#0" >  QUIZ              </a> </li>
+        <li id="info"> <a href=""          >  THE SOLAR SYSTEM  </a> </li>
     </ul>
     <a href="index.html"><img id="logo" src="/favicon_io/android-chrome-192x192.png"></a>
 </div>
@@ -38,15 +38,15 @@
 
 <div id="planetList">
     <ul>
-        <li id="Mercury"><a href="#Mercury" > Mercury </a></li>
-        <li id="Venus"  ><a href="#Venus"   > Venus   </a></li>
-        <li id="Earth"  ><a href="#Earth"   > Earth   </a></li>
-        <li id="Mars"   ><a href="#Mars"    > Mars    </a></li>
-        <li id="Jupiter"><a href="#Jupiter" > Jupiter </a></li>
-        <li id="Saturn" ><a href="#Saturn"  > Saturn  </a></li>
-        <li id="Uranus" ><a href="#Uranus"  > Uranus  </a></li>
-        <li id="Neptune"><a href="#Neptune" > Neptune </a></li>
-        <li id="Pluto"  ><a href="#Pluto"   > Pluto   </a></li>
+        <li id="Mercury" draggable="false" ><a href="#Mercury" > Mercury </a> </li>
+        <li id="Venus"   draggable="false" ><a href="#Venus"   > Venus   </a> </li>
+        <li id="Earth"   draggable="false" ><a href="#Earth"   > Earth   </a> </li>
+        <li id="Mars"    draggable="false" ><a href="#Mars"    > Mars    </a> </li>
+        <li id="Jupiter" draggable="false" ><a href="#Jupiter" > Jupiter </a> </li>
+        <li id="Saturn"  draggable="false" ><a href="#Saturn"  > Saturn  </a> </li>
+        <li id="Uranus"  draggable="false" ><a href="#Uranus"  > Uranus  </a> </li>
+        <li id="Neptune" draggable="false" ><a href="#Neptune" > Neptune </a> </li>
+        <li id="Pluto"   draggable="false" ><a href="#Pluto"   > Pluto   </a> </li>
     </ul>
 </div>
 
@@ -59,6 +59,10 @@
 
 <div id="title">
     <h2 id="titleTxt">MARS</h2>
+</div>
+
+<div id="facts" class="card">
+    Curious about our Solar System? Select a planet to explore its unique characteristics, atmosphere, and place in the cosmos. Each world offers a glimpse into space—from Mars's red deserts to Saturn's rings.
 </div>
 
 </body>
