@@ -117,8 +117,8 @@ function colourElements () {
         displayImage.src = "/images/" + planet.slice(1) + ".png";
         setTimeout(() => {
             displayImage.style.opacity = 1;
-        }, 50);
-    }, 750);
+        }, 100);
+    }, 800);
 }
 
 
