@@ -295,6 +295,61 @@ const questions = [
             "Solid metal rings"
         ],
         correct: 1
+    },
+    {
+        planet: "Pluto",
+        question: "Which of these best describes Pluto's orbit?",
+        answers: [
+            "It is perfectly circular",
+            "It is tilted and elliptical",
+            "It is a straight line from the Sun",
+            "It is identical to Earth's orbit"
+        ],
+        correct: 1
+    },
+    {
+        planet: "Earth",
+        question: "What is the main source of Earth's internal heat?",
+        answers: [
+            "Radioactive decay in its core",
+            "The Sun's radiation",
+            "Tidal forces caused by the Moon",
+            "Magnetic interactions with the Sun"
+        ],
+        correct: 0
+    },
+      {
+        planet: "Mars",
+        question: "What is the largest volcano on Mars?",
+        answers: [
+            "Olympus Mons",
+            "Valles Marineris",
+            "Mount Redoubt",
+            "Tharsis Tholus"
+        ],
+        correct: 0
+    },
+    {
+        planet: "Saturn",
+        question: "What is Saturn's moon Titan known for?",
+        answers: [
+            "Having an atmosphere similar to Earth's",
+            "Being covered in ice",
+            "Being the largest moon of Saturn",
+            "Having a surface of methane lakes"
+        ],
+        correct: 3
+    },
+    {
+        planet: "Mercury",
+        question: "Why does Mercury have such a thin atmosphere?",
+        answers: [
+            "It is too close to the Sun, which causes solar winds to blow away any atmosphere",
+            "It lacks volcanic activity that could release gases",
+            "Its gravity is too weak to hold an atmosphere",
+            "Its atmosphere is constantly being replenished by comets"
+        ],
+        correct: 0
     }
 ];
 
