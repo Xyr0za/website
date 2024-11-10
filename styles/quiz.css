@@ -67,3 +67,137 @@ body {
 
 
 /*     */
+/*     */
+/*     */
+
+
+:root {
+	--col1: ;
+	--col2: ;
+	--col3: ;
+	--col4: ;
+	--col5: ;
+}
+
+.card {
+	margin: 0 auto;
+	padding: 1em;
+	position: relative;
+	background: #343d46;
+	text-align: center;
+	border-radius: 10px;
+	width: 30em;
+	height: 21em;
+}
+
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+.card::after , .card::before{
+--angle: 0rad;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-image: conic-gradient(from var(--angle),    var(--col1), var(--col2), var(--col3), var(--col4), var(--col5), var(--col1));
+top: 50%;
+left: 50%;
+translate: -50% -50%;
+z-index: -1;
+padding: 3px;
+border-radius: 10px;
+animation: 20s spin linear infinite;
+}
+
+.card::before {
+filter: blur(1.5rem);
+opacity: 0.5;
+}
+
+@keyframes spin {
+	from {
+		--angle: 0deg;
+	}
+	to {
+		--angle:  360deg;
+	}
+}
+
+.answers {
+	text-align: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 26.5em;
+}
+
+.answer {
+	padding: 0.5em;
+	text-decoration: none;
+	margin-bottom: 1em;
+	background-color: #30343F;
+	color: #FAFAFF;
+	transition-duration: 0.4s;
+	border: none;
+	border-radius: 3em;
+	width: 29.5em;
+	text-align: left;
+	font-size: medium;
+	
+}
+
+.answer:hover { 
+	background-color: cornflowerblue;
+	text-shadow: 1px 0 #FAFAFF;
+	border-radius: 3em;
+}
+
+.circle {
+	position: fixed;
+	height: 10em;
+	width: 10em;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+  .circle:hover {
+	background-color: cornflowerblue;
+	text-shadow: 1px 0 #FAFAFF;
+	border-radius: 3em;
+}
+
+.arrow {
+	position: absolute;
+	text-align: center;
+	font-size: large;
+	font-size: 10em;
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
+}
+
+#left { 
+	left: 15%;
+	bottom: 40%;
+	background-color: #343d46;
+	visibility: visible;
+}
+
+#right { 
+	right: 15%;
+	bottom: 40%;
+	background-color: #343d46;
+	visibility: visible;
+}
+
+#l {
+	translate: 1.5rem -1.27em;
+}
+
+#r {
+	translate: 2rem -1.27em;
+}
