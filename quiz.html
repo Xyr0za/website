@@ -2,17 +2,19 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="styles/quiz.css">
-<script src="scripts/navbar.js"></script>
 
-<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="/favicon_io/site.webmanifest">
-<link rel="mask-icon" href="/favicon_io/apple-touch-icon.png" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+<script src="scripts/navbar.js" defer></script>
+<script src="scripts/quiz.js" defer></script>
 
-<title>Space</title>
+<link rel="icon" type="image/x-icon"              href="favicon_io/favicon.ico">
+<link rel="apple-touch-icon"      sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"   href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"   href="/favicon_io/favicon-16x16.png">
+<link rel="manifest"                              href="/favicon_io/site.webmanifest">
+<link rel="mask-icon"                             href="/favicon_io/apple-touch-icon.png" color="#5bbad5">
+<meta name="theme-color"                                                                  content="#ffffff">
+
+<title>Quiz</title>
 </head>
 
 <!-- -->
@@ -23,17 +25,27 @@
 
 <div id="navbar">
     <ul>
-        <li id="home"><a href="index.html"><p1 id="homeA">HOME</p1></a></li>
-        <li id="quiz"><a href="#quiz">QUIZ</a></li>
-        <li id="info"><a href="info.html">INFO</a></li>
+        <li id="home" ><a href="index.html">  HOME              </a></li>
+        <li id="quiz" ><a href="quiz.html#0"     >  QUIZ              </a></li>
+        <li id="info" ><a href="info.html" >  THE SOLAR SYSTEM  </a></li>
     </ul>
     <a href="index.html"><img id="logo" src="/favicon_io/android-chrome-192x192.png"></a>
 </div>
 
 <!-- CONTENT -->
 
-<div id="containQuiz">
-    HELLO
+<div id="facts" class="card">
+    <h2 id="questionNum"> QUESTION: </h2>
+    <h3 id="Question"></h3>
+    <ul class="answers">
+        <l1><button class="Answer" id="A" onclick="answerCheck('A')">A: TEST</button></l1>
+        <l1><button class="Answer" id="B" onclick="answerCheck('B')">B: TEST</button></l1>
+        <l1><button class="Answer" id="C" onclick="answerCheck('C')">C: TEST</button></l1>
+        <l1><button class="Answer" id="D" onclick="answerCheck('D')">D: TEST</button></l1>
+    </ul>
 </div>
+
+<span class="circle" id="left"  onclick="backQ()"><p class="arrow" id="l">&lt;</p></span>
+<span class="circle" id="right" onclick="forwardQ()"><p class="arrow" id="r">&gt;</p></span>
 
 </body>
